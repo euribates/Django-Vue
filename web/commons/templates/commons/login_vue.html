@@ -1,0 +1,36 @@
+{% extends "commons/base.html" %}
+
+{% block content %}
+<form class="form" id="app" v-cloak>
+
+<p>
+ <label for="txt_username">Username:</label>
+ <input type="text" placeholder="Username">
+</p>
+
+<p>
+ <label for="ctrl_password">Password:</label>
+ <input :type="(password_is_visible)?'text':'password'" id="ctrl_password">
+ <br>
+ <input type="checkbox" id="chk_show_password" v-model="password_is_visible">
+ <label for="chk_show_password" class="ml-2">Show password</label>
+</p>
+
+</form>
+
+{% endblock content %}
+
+{% block javascript %}
+<script charset="utf-8">
+var app = Vue.createApp({
+   'delimiters': ['[[', ']]'],
+   'data': function() { 
+       return { 
+          'password_is_visible': false,
+          }
+      },
+   });
+app.mount('#app');
+
+</script>
+{% endblock javascript %}

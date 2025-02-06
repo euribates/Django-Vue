@@ -1,0 +1,21 @@
+{% extends "commons/base.html" %}
+
+{% block content %}    
+<div id="app"> 
+    message: <b v-cloak> [[ message ]] </b> </div>
+{% endblock content %}
+
+{% block javascript %}
+<script charset="utf-8">
+var app = Vue.createApp({
+   'delimiters': ['[[', ']]'],
+   'data': function() { 
+       return { 
+          'message': 'Hello Django, from Vue',
+          }
+      },
+   });
+app.mount('#app');
+
+</script>
+{% endblock javascript %}

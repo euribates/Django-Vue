@@ -1,0 +1,45 @@
+{% load static %}<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> {{ titulo }} </title>
+    <link rel="stylesheet" href="{% static 'commons/css/bulma.css' %}">
+    {% block styles %}
+<style type="text/css" media="screen">
+[v-cloak] {
+    display:none!important;
+    }
+</style>        
+    {% endblock styles %}
+  </head>
+  <body>
+  <section class="section">
+    <div class="container">
+        {% include "commons/includes/navbar.html" %}
+
+      <h1 class="title"> {{ titulo }} </h1>
+      {% if subtitulo %}
+      <h2 class="subtitle"> {{ subtitulo }} </h2>
+      {% endif %}
+        
+
+      <main>
+      {% block content %}
+          
+      {% endblock content %}
+      </main>  
+
+    </div>
+
+  </section>
+  {% block libs %}
+  <script src="{% static 'commons/js/vue3.js' %}"></script>
+  {% endblock libs %}
+
+  {% block javascript %}
+      
+  {% endblock javascript %}
+
+  </body>
+</html>s

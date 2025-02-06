@@ -1,0 +1,49 @@
+{% extends "commons/base.html" %}
+
+{% block content %}    
+
+<form class="form">
+ <p>
+  <label for="txt_username">Username:</label>
+  <input id="txt_username" type="text" placeholder="Username">
+ </p>
+
+ <p>
+  <label for="ctrl_password">Password:</label>
+  <input type="password" id="ctrl_password">
+  <br>
+  <input type="checkbox" id="chk_show_password"/>
+  <label for="chk_show_password">Show password</label>
+ </p>
+</form>
+
+{% endblock content %}
+
+{% block libs %}
+{% comment %}
+Para estar seguros de que no estamos cargando Vue en este caso  
+{% endcomment %}
+{% endblock libs %}
+
+
+{% block javascript %}
+<script charset="utf-8">
+
+window.onload = function() {
+   let ctrlPassword = document.getElementById('ctrl_password');
+   let chkShowPassword = document.getElementById('chk_show_password');
+   chkShowPassword.checked = false;
+   ctrlPassword.type = 'password';
+
+   TooglePasswordVisibility  = function () {
+      if (ctrlPassword.type === 'text') {
+         ctrlPassword.type = 'password';
+      } else {
+         ctrlPassword.type = 'text';
+         }
+      }
+
+   chkShowPassword.addEventListener('click', TooglePasswordVisibility);
+   };
+</script>
+{% endblock javascript %}

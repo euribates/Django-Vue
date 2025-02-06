@@ -1,4 +1,4 @@
-## Ejemplo de uso de Djanho y Vue
+## Ejemplo de uso de Django y Vue.js
 
 El proyecto de ejemplo esta en la carpeta [./web/](./web).
 

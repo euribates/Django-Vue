@@ -1,0 +1,56 @@
+{% extends "commons/base.html" %}
+
+{% block content %}    
+<div id="app"> 
+
+ <table class="table" v-cloak>
+   <caption>
+   Hay [[ tareas.length ]] tareas
+   </caption>
+    <tr v-for="t in tareas">
+        <th>[[ t.prioridad ]]</th>
+        <td>[[ t.texto ]]</td>
+    </tr>
+    <tr>
+      <th>
+        <input type="text" name="p" v-model="nueva_prioridad">
+      </th>
+      <td>
+        <input type="text" name="t" v-model="nuevo_texto">
+        <button v-on:click="addTarea">+</button>
+      </td>
+    </tr>
+  </table>
+
+</div>
+{% endblock content %}
+
+{% block javascript %}
+<script charset="utf-8">
+var app = Vue.createApp({
+   'delimiters': ['[[', ']]'],
+   'data': function() { 
+       return { 
+          nuevo_texto: '',
+          nueva_prioridad: '',
+          tareas: [
+             { texto: 'Aprender Vue.js', prioridad: 7 },
+             { texto: 'Dominar el mundo', prioridad: 9 },
+             ],
+          };
+      },
+    'methods': {
+      addTarea: function() {
+        this.tareas.push({
+            texto: this.nuevo_texto,
+            prioridad: this.nueva_prioridad,
+            });
+        this.nuevo_texto = '';
+        this.nueva_prioridad = '';
+        }
+      } 
+   });
+app.mount('#app');
+
+</script>
+{% endblock javascript %}

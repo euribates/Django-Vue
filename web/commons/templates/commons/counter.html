@@ -1,0 +1,30 @@
+{% extends "commons/base.html" %}
+
+{% block content %}    
+<div id="app"> 
+    contador: <b> [[ counter ]] </b> 
+    <div class="buttons">
+    <button class="button" @click="incCounter">▲</button>
+    </div>
+</div>
+{% endblock content %}
+
+{% block javascript %}
+<script charset="utf-8">
+var app = Vue.createApp({
+   'delimiters': ['[[', ']]'],
+   'data': function() { 
+       return { 
+          'counter': 0,
+          }
+      },
+   'methods': {
+      'incCounter': function () {
+         this.counter++;
+         },
+      }, 
+   });
+app.mount('#app');
+
+</script>
+{% endblock javascript %}

@@ -1,0 +1,27 @@
+{% extends "commons/base.html" %}
+
+{% block content %}    
+<div id="app"> 
+
+   <form>
+    <input type="text" name="txt" v-model="author">
+    <p>Hola, <b>[[ author ]]</b></p>
+  </form> 
+
+</div>
+{% endblock content %}
+
+{% block javascript %}
+<script charset="utf-8">
+var app = Vue.createApp({
+   'delimiters': ['[[', ']]'],
+   'data': function() { 
+       return { 
+          'author': 'Federico Mendelson Bartholdy',
+          };
+      },
+   });
+app.mount('#app');
+
+</script>
+{% endblock javascript %}
