@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   fill="#000000"
+   version="1.1"
+   width="800px"
+   height="800px"
+   viewBox="0 0 512 512"
+   enable-background="new 0 0 512 512"
+   xml:space="preserve"
+   id="svg1"
+   sodipodi:docname="django-svgrepo-com.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs1" /><sodipodi:namedview
+   id="namedview1"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   inkscape:zoom="0.5525"
+   inkscape:cx="342.98643"
+   inkscape:cy="562.89593"
+   inkscape:window-width="1920"
+   inkscape:window-height="1128"
+   inkscape:window-x="0"
+   inkscape:window-y="219"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg1" />
+
+<g
+   id="5151e0c8492e5103c096af88a51f62ed"
+   style="fill:#44b78b;fill-opacity:1;stroke-width:1.1031"
+   transform="matrix(0.90653988,0,0,0.90653988,23.925838,23.925791)">
+
+<path
+   display="inline"
+   d="m 321.38,0.5 h -83.553 v 127.405 c -12.483,-3.253 -22.786,-4.338 -36.354,-4.338 -87.349,0 -143.781,55.34 -143.781,140.52 0,88.441 53.176,134.556 155.181,134.556 34.165,0 65.639,-3.254 108.508,-11.392 V 0.5 Z m -83.553,328.703 c -11.938,1.623 -19.533,2.162 -28.755,2.162 -42.865,0 -66.197,-24.409 -66.197,-68.904 0,-45.573 24.413,-71.616 66.743,-71.616 10.303,0 18.437,1.084 28.209,4.338 z M 454.309,0.949 V 86.675 H 370.752 V 0.949 Z m -83.557,128.583 h 83.557 v 193.699 c 0,66.735 -4.889,98.743 -19.537,126.417 -13.56,26.59 -31.466,43.403 -68.365,61.852 l -77.589,-36.896 c 36.889,-17.359 54.81,-32.542 66.197,-55.883 11.934,-23.874 15.737,-51.544 15.737,-124.252 z"
+   id="path1"
+   style="fill:#44b78b;fill-opacity:1;stroke-width:1.1031">
+
+</path>
+
+</g>
+
+</svg>
